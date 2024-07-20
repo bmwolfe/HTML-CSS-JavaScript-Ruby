@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variables</title>
+  </head>
+  <body>
+    <p>Cart Quantity</p>
+    <button onclick="
+      console.log(`Cart Quantity: ${var1}`);
+    ">Show Quantity</button>
+
+    <button onclick="
+      var1++;
+    ">Add to Cart</button>
+
+    <button onclick="
+      var1 = var1 + 2;
+    ">+2</button>
+
+    <button onclick="
+      var1 += 3;
+    ">+3</button>
+
+    <button onclick="
+    var1 = 0;
+    ">Reset Cart</button>
+
+    <script>
+      let var1 = 0;
+
+      // can't change a const value, use this as the default
+      const var2 = 3;
+
+      // has some issues so we use "let" instead
+      var var3 = 3;
+
+      // tells us what the value in the var is
+      console.log(typeof var2);
+      /*
+        console.log(var1);
+
+
+        let calc = 2+2;
+        console.log(calc);
+        console.log(calc+2);
+
+        let res = calc + 2;
+
+        console.log(res);
+        
+        var1 = 5;
+        console.log(var1);
+
+        var1 = var1 + 1;
+        console.log(var1);
+      */
+    </script>
+
+  </body>
+
+
+</html>
