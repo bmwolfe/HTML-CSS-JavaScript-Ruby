@@ -112,6 +112,38 @@ body{
   border-radius: 60px;
 }
 
-.github-button{
+.github-button-image{
   width: 50px;
+}
+
+.github-button{
+  background: none;
+  border: solid;
+  border-radius: 50px;
+  border-width: 1px;
+  width: 70px;
+  height: 70px;
+  transition: 0.5s;
+}
+
+.github-button:hover{
+  background-color: #dbe3db;
+}
+
+.buttons-with-icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: pink;
+}
+
+.linkedIn-logo{
+  font-family: Arial;
+  color: black;
+  border: solid;
+  width: 20px;
+  border-width: 1px;
 }

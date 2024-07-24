@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Brendon Wolfe's Portfolio</title>
         <link rel="stylesheet" href="portfolio.css">
@@ -37,7 +37,15 @@
           <h3 class="info-text">
             <br>LinkedIn: https://www.linkedin.com/in/brendonwolfe21
             <br>GitHub: https://github.com/bmwolfe
-            <button><img class="github-button" src="images/github_logo.png"></image></button>
+            <div class="buttons-with-icons">
+              <button onclick="openGitHub()" class="github-button">
+                <img class="github-button-image" src="images/github_logo.png">
+              </button>
+              <button onclick="openLinkedIn()" class="github-button">
+                <!--<img class="linkedIn-button-logo" src="">-->
+                <p class="linkedIn-logo">in</p>
+              </button>
+            </div>
           </h3>
         </div>
         <div class="photo-outline">
@@ -55,9 +63,9 @@
         <h4>Education</h4>
         <h4>Computer Language Skills</h4>
         <p>
-          <u>Programming Languages:</u> C, CSS, HTML, Java, JavaScript, Python, Swift
+          <u>Programming Languages:</u> C, C++, CSS, HTML, Java, JavaScript, Python, Swift
           <br><u>Software Applications:</u> Eclipse IDE, NetBeans IDE, VSCode, Scene Builder, Google Colab, JupyterLab, DaVinci Resolve Video Editor, Microsoft Office Applications
-          <br><u>Other:</u> Algorithms, Classes, Data Structures, Functions, JavaFX, Objects
+          <br><u>Other:</u> Algorithms, Classes, Data Structures, Functions, JavaFX, Objects, Parallel Programming
         </p>
         <h4>Activities and Achievements</h4>
 
@@ -74,6 +82,16 @@
       </div>
       
 
-      <script></script>
+      <script>
+        //Make this a separate file when more code is added
+
+        function openGitHub(){
+          window.open('https://github.com/bmwolfe', '_blank');
+        }
+
+        function openLinkedIn(){
+          window.open('https://www.linkedin.com/in/brendonwolfe21/', '_blank');
+        }
+      </script>
     </body>
 </html>
