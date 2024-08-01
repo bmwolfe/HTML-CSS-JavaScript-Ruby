@@ -6,11 +6,8 @@ import {deliveryOptions} from '../data/deliveryOptions.js';
 
 //hello();
 
-const today = dayjs();
-const deliveryDate = today.add(7, 'days');
-deliveryDate.format('dddd, MMMM D');
-
 //document.querySelector('.checkout-item-count').innerHTML = `${cart.quantity} items`;
+
 
 let cartSummaryHTML = '';
 
@@ -25,10 +22,28 @@ cart.forEach((cartItem)=>{
         }
     });
 
+    const deliveryOptionId = cartItem.
+    deliveryOptionId;
+
+    let deliveryOption;
+
+    deliveryOptions.forEach((option)=>{
+        if(option.id === deliveryOptionId){
+            deliveryOption = option;
+        }
+    });
+
+const today = dayjs();
+const deliveryDate = today.add(
+deliveryOption.deliveryDays, 'days'
+);
+
+const dateString = deliveryDate.format('dddd, MMMM D');
+
     cartSummaryHTML += `
     <div class="cart-item-container js-cart-item-container-${matchingProduct.id}">
         <div class="delivery-date">
-            Delivery date: ${today.format('dddd, MMMM D')}
+            Delivery date: ${dateString}
         </div>
 
         <div class="cart-item-details-grid">
@@ -69,10 +84,11 @@ cart.forEach((cartItem)=>{
     `;
 });
 
-function deliveryOptionsHTML(matchingProduct){
+function deliveryOptionsHTML(matchingProduct, cartItem){
     let html = '';
 
-    deliveryOptions.forEach((deliveryOption, cartItem)=>{
+    deliveryOptions.forEach((deliveryOption)=>{
+
         const today = dayjs();
         const deliveryDate = today.add(
             deliveryOption.deliveryDays, 'days'
