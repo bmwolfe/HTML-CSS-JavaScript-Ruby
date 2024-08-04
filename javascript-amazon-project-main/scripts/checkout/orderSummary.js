@@ -5,8 +5,6 @@ import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 import {deliveryOptions, getDeliveryOption} from '../../data/deliveryOptions.js';
 import { renderPaymentSummary } from './paymentSUmmary.js';
 
-//document.querySelector('.checkout-item-count').innerHTML = `${cart.quantity} items`;
-
 const today = dayjs();
     const deliveryDate = today.add(7, 'days');
 
@@ -124,6 +122,7 @@ export function renderOrderSummary(){
                 `.js-cart-item-container-${productId}`
             );
             container.remove();
+            renderAmountOfItems();
         });
     });
 
@@ -136,6 +135,15 @@ export function renderOrderSummary(){
                 renderPaymentSummary();
             });
         });
+}
+
+export function renderAmountOfItems(){
+    let numItems = 0;
+
+    cart.forEach((cartItem)=>{
+        numItems += 1 * cartItem.quantity;
+    });
+    document.querySelector('.js-checkout-item-count').innerHTML = `${numItems} items`;
 }
 
 
