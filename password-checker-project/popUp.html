@@ -1,9 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <head></head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="popUp.css">
+    <script src="checker.js" defer></script>
 
+    <!-- TODO: for google sign in-->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 
-        
-    </body>
+</head>
+<body>
+    <p>Login with existing account:</p>
+    <input id="emailInput" class="info-input" type="email" placeholder="Email">
+    <div>
+        <input id="passwordInput" class="info-input" type="password" placeholder="Password">
+        <button id="togglePassword" class="info-hider" onclick="changeBox()">Show Password</button>
+    </div>
+    <button class="google-login">Login with Google</button>
+    <button class="login-button" onclick="login()">Login</button>
+    <p>Don't have an account? Create one here:</p>
+    <button class="google-button" onclick="openGoogle()">Connect with Google</button>
+
+    <a href="accountCreation.html">
+        <button class="email-password-button">Use email and password</button>
+    </a>
+    
+</body>
 </html>

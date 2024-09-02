@@ -1,0 +1,9 @@
+This code will take in login information to check if it is a valid login. (Database needs to be added as of 9/1/2024)
+
+It will also allow for logging in with Google (need to add OAuth 2.0 if you legitimately use it, will test this after the database is created)
+
+It allows for new account creation.
+
+When creating an account it requires specific criteria to be met in order to create a valid account. 
+
+(Need to add a database to store accounts when created so users can login)

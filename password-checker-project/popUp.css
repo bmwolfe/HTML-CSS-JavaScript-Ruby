@@ -1,0 +1,96 @@
+/*Modify this css for your website*/
+
+p{
+
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: -5px;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+}
+
+ul li::before {
+    content: "•";
+    font-size: 1.2em;
+    color: grey; 
+    margin-right: 10px; 
+    display: inline-block;
+    line-height: 1; 
+    margin-left: 5px;
+}
+
+.info-input{
+    margin-top: 5px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    height: 16px;
+    width: 200px;
+}
+
+.info-hider{
+
+}
+
+.google-login{
+
+}
+
+.login-button{
+
+}
+
+.google-button{
+
+}
+
+.email-password-button{
+
+}
+
+.account-creation-container{
+    display:grid;
+}
+
+.go-back-button{
+    
+}
+
+.body-account-creation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.passMatchMessage{
+    transition: color 0.3s ease; 
+}
+
+.requirements {
+    transition: color 0.3s ease, text-decoration-color 0.3s ease; 
+    text-decoration: line-through; 
+    text-decoration-color: transparent;
+}
+
+.requirements::marker { 
+    content: "";
+    text-decoration: none;
+}
+
+.requirements.completed {
+    color: green;
+    text-decoration-color: green; 
+    text-decoration: line-through; 
+}
+
+.requirements.incomplete {
+    color: red; 
+    text-decoration: none;
+}
