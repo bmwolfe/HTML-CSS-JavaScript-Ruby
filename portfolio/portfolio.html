@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
       <title>Brendon Wolfe's Portfolio</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="portfolio.css">
   </head>
   <body>
-    <link rel="" href="header.html"> <!--link the header here from the new file-->
+    <link rel="" href="header.html"> <!-- TODO: link the header here from the new file-->
 
-    <nav>
+    <nav> <!-- * This is my header section -->
       <div class="left-section">
         <p class="email"><u>wolfebrendon@gmail.com</u></p>
         <p class="phone">(810) 734-1262</p>
@@ -17,13 +18,10 @@
           <button class="header-button">Home</button>
         </a>
         <a class="" href="about-me.html">
-          <button class="header-button">Skills</button>
+          <button class="header-button">About</button>
         </a>
-        <a class="" href="work-experience.html">
-          <button class="header-button">Work Experience</button>
-        </a>
-        <a class="projects-link" href="projects.html">
-          <button class="header-button">Projects</button>
+        <a class="projects-link" href="devPosts.html">
+          <button class="header-button">Dev Posts</button>
         </a>
       </div>
     </nav>
@@ -36,13 +34,17 @@
           <br>Hello!
           <br>My name is Brendon.
           <div class="buttons-with-icons">
-            <button onclick="openGitHub()" class="github-button">
-              <img class="github-button-image" src="images/github_logo.png">
-            </button>
-            <button onclick="openLinkedIn()" class="linkedIn-button">
-              <!--<img class="linkedIn-button-logo" src="">-->
-              in
-            </button>
+            <a href="https://github.com/bmwolfe" target="_blank">
+              <button class="github-button">
+                <img class="github-button-image" src="images/github_logo.png" alt="GitHub">
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/brendonwolfe21/" target="_blank">
+              <button class="linkedIn-button">
+                <!-- ! <img class="linkedIn-button-logo" src="">-->
+                in
+              </button>
+            </a>
           </div>
         </h3>
       </div>
@@ -51,78 +53,65 @@
       </div>
     </div>
     
-    <!--
-      <p class="greeting">Welcome to my website!</p>
-      <p class="explanation">Here I will demonstrate my use of HTML, CSS, JavaScript
-        <br>as well as my past achievement and various other coding projects I have worked on.
-      </p>
-    -->
+    <!-- !
+      ! <p class="greeting">Welcome to my website!</p>
+      ! <p class="explanation">Here I will demonstrate my use of HTML, CSS, JavaScript
+       ! <br>as well as my past achievement and various other coding projects I have worked on.
+      ! </p>
+   ! -->
     
 
     <div class="container">
       <div class="about">
-        <h4>Education:</h4>
-        <p>I graduated top of my class from Algonac High School in 2021,
-          acquiring my IB Diploma through the IB Diploma Programme.<br><br>
-          Currently, I am studying computer science at Oakland University,
-          I have an interest in web, app as well as game development.
-          I am specializing my degree in Cybersecurity.<br><br>
+        <h4>Objective:</h4>
+        <p>I am a first generation Computer Science major seeking an internship or job within the field.
+          I have interests in many aspects of the field including: Web Development, App Development, 
+          Game Development, AI Development and Cybersecurity
         </p>
       </div>
       <img class="school" src="images/oakland-photo.jpeg">
     </div>
 
-    <div>
-      <h4>Activities and Achievements:</h4>
-      <p>
-        - President’s List Fall 2021 - Present<br>
-        - Member of Society of Women’s Engineers Spring 2022 - Present<br>
-       -  Member of the National Society of Leadership and Success (NSLS) Spring 2023 - Present<br>
-        - Recipient of the SECS Academic Promise Scholarship for 
-        academic excellence in High School, participating in Engineering and <br>
-        Computer Science clubs/events at Oakland University, maintaining a 2.5+ GPA 
-        and needing financial assistance<br>
-        - Recipient of the SECS Alumni/Yatooma Scholarship for academic excellence 
-        in the fields of Engineering and Computer Science<br>
-        - Recipient of the MI Competitive Scholarship for academic excellence<br>
-        - Recipient of the OU Talented Scholar by receiving a between 1200-1300 
-        on the SAT and maintaining a 3.0+ GPA<br>
-        - Recipient of the OU Golden Grant Renewal by maintaining a 2.0+ GPA<br>
-        - Recipient of the OU Housing Grant Renewal by maintaining a 2.5+ GPA<br>
-        - Recipient of the OU Geographic Region Award by maintaining a 3.0+ GPA<br>
-        - Won 2nd place in the Grizzhacks Hackathon for 2023<br><br>
 
-      </p>
-    </div>
-
-
-    <div class="projects">
+    <div class="projectsList">
       <h4>Projects:</h4>
       <p>- Online Resume<br>
-        - Sophmore Project Arcade Game: Jeopardy, Game/Player Statistics Tracker<br>
-        - Finite Automata Minecraft Mod<br>
-        - Youtube Clone<br>
         - Virtual Body Health App (In Progress) <br><br>
 
       </p>
     </div>
 
-    <h4>If you want to see this information and some more click the button below 
-      to download my resume.</h4>
+    <ul class="js-projectsList"></ul>
 
-    <button class="header-button">Download Resume</button>
+
+    <h4>The footer contains my resume for download.</h4>
+
+    <footer class="footer">
+     <div class="footerTop">
+      <ul>
+        <li class="contact-info">
+          <p class="contactInfo">Contact: <a href="mailto:wolfebrendon@gmail.com" class="contactInfo emailLink">wolfebrendon@gmail.com</a></p>
+        </li>
+        <li>
+          <p class="contactInfo">Phone: (810) 734-1262</p>
+        </li>
+  
+        <!-- TODO add resume to the project -->
+  
+        <li class="resume-button">
+          <p><a href="your-resume.pdf" class="" download>Download Resume</a></p>
+        </li>
+        <li class="back-to-top">
+          <p><a href="#top">Back to Top</a></p>
+        </li>
+      </ul>
+     </div>
+     <div class="footerBottom">
+        <p class="copyright">&copy; 2024 <script>new Date().getFullYear()>2024&&document.write("-"+new Date().getFullYear());</script> Brendon M. Wolfe. All Rights Reserved</p>
+      </div>
+    </footer>
     
-
-    <script>
-      //Make this a separate file when more code is added
-
-      function openGitHub(){
-        window.open('https://github.com/bmwolfe', '_blank');
-      }
-
-      function openLinkedIn(){
-        window.open('https://www.linkedin.com/in/brendonwolfe21/', '_blank');
-      }
-    </script>
+    <script type="module" src="scripts/videoList.js"></script>
+    
   </body>
 </html>
