@@ -22,6 +22,7 @@ p{
 }
 
 
+
 button {
   background-color: #6bbfda;
   font-size: 15px;
@@ -68,7 +69,7 @@ img {
 
 .left-section {
   width: 30%px;
-  margin-right: 10px;
+  margin-right: 5%;
 }
 
 .phone, .email {
@@ -549,4 +550,8 @@ ul{
 
 .resumeInfo{
   color: #ea9083;
+}
+
+.name{
+  padding-top: 1%;
 }
