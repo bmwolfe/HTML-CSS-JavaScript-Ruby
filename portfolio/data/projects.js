@@ -9,15 +9,15 @@ export function getProjectsTotal(projects){
 export const projects = [
     {
         name: "Finite Automata Minecraft Mod",
-        description: "This project the was 2nd place winner for the Grizzhacks6 Hackathon in 2024",
-        thumbnail: "images/Algonac.jpg",
+        description: "This project was the 2nd place winner for the Grizzhacks6 Hackathon in 2024",
+        thumbnail: "",
         video: "",
         inprogress: false
      }, 
      {
          name: "Youtube Clone",
          description: "Here I worked on my HTML and CSS skills.",
-         thumbnail: "images/Algonac.jpg",
+         thumbnail: "",
          video: "",
          inprogress: true
      },

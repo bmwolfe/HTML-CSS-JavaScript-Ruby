@@ -11,7 +11,7 @@ if(totalProjects == 1){
         projectHTML += `
                 <li class="">
                     <div class="projectContainerOdd">
-                        <p>${project.name}</p>
+                        <p class="generatedProject"><b>${project.name}</b></p>
                         <p>${project.description}</p>
                         <div class="video-container">
                             <video id="myVideo${totalProjects - projectVal}" width="600" controls poster="${project.thumbnail}">
@@ -31,7 +31,7 @@ if(totalProjects == 1){
                 projectHTML += `
                 <li class="">
                     <div class="projectContainerEven">
-                        <p>${project.name}</p>
+                        <p class="generatedProject"><b>${project.name}</b></p>
                         <p>${project.description}</p>
                         <div class="video-container">
                             <video id="myVideo${totalProjects - projectVal}" width="600" controls poster="${project.thumbnail}">
@@ -48,7 +48,7 @@ if(totalProjects == 1){
                 projectHTML += `
                 <li class="">
                     <div class="projectContainerOdd">
-                        <p>${project.name}</p>
+                        <p class="generatedProject"><b>${project.name}</b></p>
                         <p>${project.description}</p>
                         <div class="video-container">
                             <video id="myVideo${totalProjects - projectVal}" width="600" controls poster="${project.thumbnail}">
